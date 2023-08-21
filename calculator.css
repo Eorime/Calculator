@@ -1,3 +1,14 @@
+#screen {
+  background-color: rgb(230, 201, 201);
+  width: 100px;
+  margin-left: 34.3%;
+  border-radius: 8px;
+  position: absolute;
+  margin-top: -85px;
+  padding: 40px;
+  padding-right: 280px;
+}
+
 #calculator {
   display: flex;
   flex-wrap: nowrap;
