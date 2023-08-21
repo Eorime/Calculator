@@ -2,6 +2,8 @@
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
+  margin-left: 34%;
+  margin-top: 175px;
 }
 
 #calculatorOne {
@@ -19,6 +21,7 @@
   font-family: "Share Tech Mono", monospace;
   font-size: 25px;
   padding: 20px;
+  border-radius: 8px;
 }
 
 #calculatorTwo {
@@ -36,6 +39,7 @@
   font-family: "Share Tech Mono", monospace;
   font-size: 25px;
   padding: 20px;
+  border-radius: 8px;
 }
 
 #calculatorThree {
@@ -53,6 +57,7 @@
   font-family: "Share Tech Mono", monospace;
   font-size: 25px;
   padding: 20px;
+  border-radius: 8px;
 }
 
 #calculatorFour > div {
@@ -64,6 +69,7 @@
   font-family: "Share Tech Mono", monospace;
   font-size: 25px;
   padding: 20px;
+  border-radius: 8px;
 }
 
 #calculatorFour {
@@ -83,4 +89,6 @@
   font-size: 25px;
   padding: 20px;
   padding-right: 130px;
+  margin-left: 34.7%;
+  border-radius: 8px;
 }
