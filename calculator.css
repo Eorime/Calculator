@@ -1,0 +1,86 @@
+#calculator {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+#calculatorOne {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+#calculatorOne > div {
+  background-color: #800020;
+  width: 50px;
+  margin: 10px;
+  text-align: center;
+  color: rgb(230, 201, 201);
+  font-family: "Share Tech Mono", monospace;
+  font-size: 25px;
+  padding: 20px;
+}
+
+#calculatorTwo {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+#calculatorTwo > div {
+  background-color: #800020;
+  width: 50px;
+  margin: 10px;
+  text-align: center;
+  color: rgb(230, 201, 201);
+  font-family: "Share Tech Mono", monospace;
+  font-size: 25px;
+  padding: 20px;
+}
+
+#calculatorThree {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+#calculatorThree > div {
+  background-color: #800020;
+  width: 50px;
+  margin: 10px;
+  text-align: center;
+  color: rgb(230, 201, 201);
+  font-family: "Share Tech Mono", monospace;
+  font-size: 25px;
+  padding: 20px;
+}
+
+#calculatorFour > div {
+  background-color: #800020;
+  width: 50px;
+  margin: 10px;
+  text-align: center;
+  color: rgb(230, 201, 201);
+  font-family: "Share Tech Mono", monospace;
+  font-size: 25px;
+  padding: 20px;
+}
+
+#calculatorFour {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+#zero {
+  background-color: #800020;
+  width: 50px;
+  margin-top: -79px;
+  margin-left: 10px;
+  text-align: center;
+  color: rgb(230, 201, 201);
+  font-family: "Share Tech Mono", monospace;
+  font-size: 25px;
+  padding: 20px;
+  padding-right: 130px;
+}
