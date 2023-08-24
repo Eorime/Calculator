@@ -1,3 +1,8 @@
+//number array
+let numberArr = [];
+
+//funqcia romelic arrays elementebs ertmanets miumatebs
+
 // actions
 let clear = document.getElementById("clear");
 let percent = document.getElementById("percent");
@@ -21,9 +26,12 @@ let eight = document.getElementById("eight");
 let nine = document.getElementById("nine");
 let zero = document.getElementById("zero");
 
+//define functions for the operations : D
 //number clicks
 one.addEventListener("click", function () {
-  console.log("1");
+  numberArr.push(1);
+  /*checking*/ console.log(numberArr);
+  //   console.log("1"); // add to the number array(?)
 });
 
 two.addEventListener("click", function () {
@@ -62,4 +70,18 @@ zero.addEventListener("click", function () {
   console.log("0");
 });
 
+function squareRoot() {
+  console.log(Math.sqrt(numberArr));
+}
+
+function percentage() {
+  console.log(Math);
+}
 //operation clicks
+root.addEventListener("click", squareRoot);
+percent.addEventListener("click", percentage);
+//root percentage decimal clear
+
+//we could clear the existing array after the click and do the operation w the current number(?)
+//the problem is theres gonna be only one operation
+//gotta merge the elements of the array if theres more than one to get the desired number
