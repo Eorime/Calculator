@@ -9,8 +9,8 @@ let percent = document.getElementById("percent");
 let root = document.getElementById("root");
 let division = document.getElementById("division");
 let multiplication = document.getElementById("multiplication");
-let minus = document.getElementById("addition");
-let plus = document.getElementById("subtraction");
+let plus = document.getElementById("addition");
+let minus = document.getElementById("subtraction");
 let equality = document.getElementById("equality");
 let decimal = document.getElementById("decimal");
 
@@ -70,6 +70,8 @@ zero.addEventListener("click", function () {
   console.log("0");
 });
 
+//operation functions
+
 function squareRoot() {
   console.log(Math.sqrt(numberArr));
 }
@@ -80,6 +82,14 @@ function percentage() {
 //operation clicks
 root.addEventListener("click", squareRoot);
 percent.addEventListener("click", percentage);
+decimal.addEventListener("click" /*decimal function*/);
+clear.addEventListener("click" /*clear function*/);
+division.addEventListener("click" /*division function*/);
+multiplication.addEventListener("click" /*multiplication function*/);
+addition.addEventListener("click" /*addition function*/);
+subtraction.addEventListener("click" /*subtraction function*/);
+equality.addEventListener("click" /*equals function*/);
+
 //root percentage decimal clear
 
 //we could clear the existing array after the click and do the operation w the current number(?)
