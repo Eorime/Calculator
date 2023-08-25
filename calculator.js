@@ -1,7 +1,11 @@
-//number array
-let numberArr = [];
+//screenis text contents operator axladsheyvanili number
+let display = document.getElementById("screen");
 
-//funqcia romelic arrays elementebs ertmanets miumatebs
+function displayNum(numb) {
+  if (display.textContent == 0) {
+    display.textContent = numb;
+  }
+}
 
 // actions
 let clear = document.getElementById("clear");
@@ -26,72 +30,70 @@ let eight = document.getElementById("eight");
 let nine = document.getElementById("nine");
 let zero = document.getElementById("zero");
 
-//define functions for the operations : D
 //number clicks
 one.addEventListener("click", function () {
-  numberArr.push(1);
-  /*checking*/ console.log(numberArr);
-  //   console.log("1"); // add to the number array(?)
+  display.textContent = 1;
 });
 
 two.addEventListener("click", function () {
-  console.log("2");
+  display.textContent = 2;
 });
 
 three.addEventListener("click", function () {
-  console.log("3");
+  display.textContent = 3;
 });
 
 four.addEventListener("click", function () {
-  console.log("4");
+  display.textContent = 4;
 });
 
 five.addEventListener("click", function () {
-  console.log("5");
+  display.textContent = 5;
 });
 
 six.addEventListener("click", function () {
-  console.log("6");
+  display.textContent = 6;
 });
 
 seven.addEventListener("click", function () {
-  console.log("7");
+  display.textContent = 7;
 });
 
 eight.addEventListener("click", function () {
-  console.log("8");
+  display.textContent = 8;
 });
 
 nine.addEventListener("click", function () {
-  console.log("9");
+  display.textContent = 9;
 });
 
 zero.addEventListener("click", function () {
-  console.log("0");
+  display.textContent = 0;
 });
 
 //operation functions
 
-function squareRoot() {
-  console.log(Math.sqrt(numberArr));
-}
+clear.addEventListener("click", function () {
+  display.textContent = 0;
+});
+// function squareRoot() {
+//   display.textContent =.(Math.sqrt(numberArr));
+// }
 
-function percentage() {
-  console.log(Math);
-}
-//operation clicks
-root.addEventListener("click", squareRoot);
-percent.addEventListener("click", percentage);
-decimal.addEventListener("click" /*decimal function*/);
-clear.addEventListener("click" /*clear function*/);
-division.addEventListener("click" /*division function*/);
-multiplication.addEventListener("click" /*multiplication function*/);
-addition.addEventListener("click" /*addition function*/);
-subtraction.addEventListener("click" /*subtraction function*/);
-equality.addEventListener("click" /*equals function*/);
+// function percentage() {
+//   display.textContent =.(Math);
+// }
+// //operation clicks
+// // root.addEventListener("click", );
+// // percent.addEventListener("click", );
+// decimal.addEventListener("click"  );
+// clear.addEventListener("click"  );
+// division.addEventListener("click"  );
+// multiplication.addEventListener("click"  );
+// addition.addEventListener("click"  );
+// subtraction.addEventListener("click" );
+// equality.addEventListener("click"  );
 
 //root percentage decimal clear
 
-//we could clear the existing array after the click and do the operation w the current number(?)
-//the problem is theres gonna be only one operation
-//gotta merge the elements of the array if theres more than one to get the desired number
+// display text content display number
