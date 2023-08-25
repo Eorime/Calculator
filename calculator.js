@@ -32,43 +32,88 @@ let zero = document.getElementById("zero");
 
 //number clicks
 one.addEventListener("click", function () {
-  display.textContent = 1;
+  if (display.textContent === "0") {
+    display.textContent = 1;
+  } else {
+    if (display.textContent === "0") {
+      display.textContent = 1;
+    } else {
+      display.textContent = display.textContent + 1;
+    }
+    1;
+  }
 });
 
 two.addEventListener("click", function () {
-  display.textContent = 2;
+  if (display.textContent === "0") {
+    display.textContent = 2;
+  } else {
+    display.textContent = display.textContent + 2;
+  }
 });
 
 three.addEventListener("click", function () {
-  display.textContent = 3;
+  if (display.textContent === "0") {
+    display.textContent = 3;
+  } else {
+    display.textContent = display.textContent + 3;
+  }
 });
 
 four.addEventListener("click", function () {
-  display.textContent = 4;
+  if (display.textContent === "0") {
+    display.textContent = 4;
+  } else {
+    display.textContent = display.textContent + 4;
+  }
 });
 
 five.addEventListener("click", function () {
-  display.textContent = 5;
+  if (display.textContent === "0") {
+    display.textContent = 5;
+  } else {
+    display.textContent = display.textContent + 5;
+  }
 });
 
 six.addEventListener("click", function () {
-  display.textContent = 6;
+  if (display.textContent === "0") {
+    display.textContent = 6;
+  } else {
+    display.textContent = display.textContent + 6;
+  }
 });
 
 seven.addEventListener("click", function () {
-  display.textContent = 7;
+  if (display.textContent === "0") {
+    display.textContent = 7;
+  } else {
+    display.textContent = display.textContent + 7;
+  }
 });
 
 eight.addEventListener("click", function () {
-  display.textContent = 8;
+  if (display.textContent === "0") {
+    display.textContent = 8;
+  } else {
+    display.textContent = display.textContent + 8;
+  }
 });
 
 nine.addEventListener("click", function () {
-  display.textContent = 9;
+  if (display.textContent === "0") {
+    display.textContent = 9;
+  } else {
+    display.textContent = display.textContent + 9;
+  }
 });
 
 zero.addEventListener("click", function () {
-  display.textContent = 0;
+  if (display.textContent === "0") {
+    display.textContent = 0;
+  } else {
+    display.textContent = display.textContent + 0;
+  }
 });
 
 //operation functions
@@ -84,6 +129,10 @@ clear.addEventListener("click", function () {
 //   display.textContent =.(Math);
 // }
 // //operation clicks
+decimal.addEventListener("click", function () {
+  display.textContent = display.textContent + ".";
+});
+
 // // root.addEventListener("click", );
 // // percent.addEventListener("click", );
 // decimal.addEventListener("click"  );
