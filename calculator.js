@@ -9,7 +9,7 @@ let division = document.getElementById("division");
 let multiplication = document.getElementById("multiplication");
 let plus = document.getElementById("addition");
 let minus = document.getElementById("subtraction");
-let equality = document.getElementById("equality");
+let result = document.getElementById("result");
 let decimal = document.getElementById("decimal");
 
 //numbers
@@ -134,11 +134,8 @@ root.addEventListener("click", function () {
 // multiplication.addEventListener("click"  );
 // addition.addEventListener("click"  );
 // subtraction.addEventListener("click" );
-// equality.addEventListener("click"  );
+// result.addEventListener("click"  );
 
 //root percentage decimal clear
 
 // display text content display number
-// anu gvaqvs number operatoris marcxniv da gvaqvs mis marjvniv xoda magatze unda ganvaxorcielot operaciebi.
-
-//aige displaytextcontent <> operation <> the other part ogond ar vici es rogor vqna
