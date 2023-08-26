@@ -1,12 +1,6 @@
 //screenis text contents operator axladsheyvanili number
 let display = document.getElementById("screen");
 
-function displayNum(numb) {
-  if (display.textContent == 0) {
-    display.textContent = numb;
-  }
-}
-
 // actions
 let clear = document.getElementById("clear");
 let percent = document.getElementById("percent");
@@ -121,9 +115,6 @@ zero.addEventListener("click", function () {
 clear.addEventListener("click", function () {
   display.textContent = 0;
 });
-// function squareRoot() {
-//   display.textContent =.(Math.sqrt(numberArr));
-// }
 
 // function percentage() {
 //   display.textContent =.(Math);
@@ -133,7 +124,9 @@ decimal.addEventListener("click", function () {
   display.textContent = display.textContent + ".";
 });
 
-// // root.addEventListener("click", );
+root.addEventListener("click", function () {
+  display.textContent = Math.sqrt(display.textContent);
+});
 // // percent.addEventListener("click", );
 // decimal.addEventListener("click"  );
 // clear.addEventListener("click"  );
@@ -146,3 +139,6 @@ decimal.addEventListener("click", function () {
 //root percentage decimal clear
 
 // display text content display number
+// anu gvaqvs number operatoris marcxniv da gvaqvs mis marjvniv xoda magatze unda ganvaxorcielot operaciebi.
+
+//aige displaytextcontent <> operation <> the other part ogond ar vici es rogor vqna
