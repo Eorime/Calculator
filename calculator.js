@@ -1,7 +1,8 @@
-//screenis text contents operator axladsheyvanili number
 let display = document.getElementById("screen");
+let numOne = document.getElementById("num-one");
+let numTwo = document.getElementById("num-two");
 
-// actions
+//operations
 let clear = document.getElementById("clear");
 let percent = document.getElementById("percent");
 let root = document.getElementById("root");
@@ -11,6 +12,7 @@ let plus = document.getElementById("addition");
 let minus = document.getElementById("subtraction");
 let result = document.getElementById("result");
 let decimal = document.getElementById("decimal");
+let operator = document.querySelector(".operator");
 
 //numbers
 let one = document.getElementById("one");
@@ -110,15 +112,14 @@ zero.addEventListener("click", function () {
   }
 });
 
-//operation functions
+//operation clicks
+//if clicked udris + mashin result udris num ones + numtwo (anu keys) da display udris results
 
 clear.addEventListener("click", function () {
   display.textContent = 0;
+  numOne = "";
 });
 
-// function percentage() {
-//   display.textContent =.(Math);
-// }
 // //operation clicks
 decimal.addEventListener("click", function () {
   display.textContent = display.textContent + ".";
@@ -127,15 +128,36 @@ decimal.addEventListener("click", function () {
 root.addEventListener("click", function () {
   display.textContent = Math.sqrt(display.textContent);
 });
-// // percent.addEventListener("click", );
-// decimal.addEventListener("click"  );
-// clear.addEventListener("click"  );
-// division.addEventListener("click"  );
-// multiplication.addEventListener("click"  );
-// addition.addEventListener("click"  );
-// subtraction.addEventListener("click" );
-// result.addEventListener("click"  );
 
-//root percentage decimal clear
+percent.addEventListener("click", function () {
+  display.textContent = parseFloat(
+    (display.textContent / 100).toFixed(10).toString()
+  );
+});
 
-// display text content display number
+division.addEventListener("click", function () {
+  numOne = Number(display.textContent);
+  if (numOne != 0) {
+    numTwo = Number(display.textContent);
+  }
+  console.log(numTwo);
+});
+
+multiplication.addEventListener("click", function () {
+  numOne = display.textContent;
+  console.log(numOne);
+  display.textContent = numOne + "x";
+});
+
+addition.addEventListener("click", function () {
+  numOne = display.textContent;
+  console.log(numOne);
+  display.textContent = numOne + "+";
+});
+
+subtraction.addEventListener("click", function () {
+  numOne = display.textContent;
+  console.log(numOne);
+  //aq calculate da mere display text content
+  display.textContent = numOne + "-";
+});
