@@ -143,7 +143,6 @@ addition.addEventListener("click", function () {
 
 subtraction.addEventListener("click", function () {
   numOne = display.textContent;
-  //aq calculate da mere display text content
   display.textContent = numOne + "-";
 });
 
