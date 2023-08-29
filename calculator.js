@@ -1,6 +1,5 @@
 let display = document.getElementById("screen");
 let numOne = document.getElementById("num-one");
-let numTwo = document.getElementById("num-two");
 
 //operations
 let clear = document.getElementById("clear");
@@ -108,8 +107,6 @@ zero.addEventListener("click", function () {
 });
 
 //operation clicks
-//if clicked udris + mashin result udris num ones + numtwo (anu keys) da display udris results
-
 clear.addEventListener("click", function () {
   display.textContent = 0;
   numOne = "";
@@ -151,10 +148,6 @@ subtraction.addEventListener("click", function () {
   display.textContent = numOne + "-";
 });
 
-//udrisshi aris yvela operacia
-// display cnotentidan aige da string naxe da gaparse
-
 result.addEventListener("click", function () {
-  //take display content
   display.textContent = eval(display.textContent);
 });
