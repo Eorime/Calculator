@@ -31,12 +31,7 @@ one.addEventListener("click", function () {
   if (display.textContent === "0") {
     display.textContent = 1;
   } else {
-    if (display.textContent === "0") {
-      display.textContent = 1;
-    } else {
-      display.textContent = display.textContent + 1;
-    }
-    1;
+    display.textContent = display.textContent + 1;
   }
 });
 
@@ -136,28 +131,30 @@ percent.addEventListener("click", function () {
 });
 
 division.addEventListener("click", function () {
-  numOne = Number(display.textContent);
-  if (numOne != 0) {
-    numTwo = Number(display.textContent);
-  }
-  console.log(numTwo);
+  numOne = display.textContent;
+  display.textContent = numOne + "/";
 });
 
 multiplication.addEventListener("click", function () {
   numOne = display.textContent;
-  console.log(numOne);
-  display.textContent = numOne + "x";
+  display.textContent = numOne + "*";
 });
 
 addition.addEventListener("click", function () {
   numOne = display.textContent;
-  console.log(numOne);
   display.textContent = numOne + "+";
 });
 
 subtraction.addEventListener("click", function () {
   numOne = display.textContent;
-  console.log(numOne);
   //aq calculate da mere display text content
   display.textContent = numOne + "-";
+});
+
+//udrisshi aris yvela operacia
+// display cnotentidan aige da string naxe da gaparse
+
+result.addEventListener("click", function () {
+  //take display content
+  display.textContent = eval(display.textContent);
 });
