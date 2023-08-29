@@ -112,7 +112,6 @@ clear.addEventListener("click", function () {
   numOne = "";
 });
 
-// //operation clicks
 decimal.addEventListener("click", function () {
   display.textContent = display.textContent + ".";
 });
